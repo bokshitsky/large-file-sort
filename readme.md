@@ -1,13 +1,13 @@
 # Генерация строк
 
-Скрипт `genarator.py` отправляет в stdout случайные строки состоящие из латинских букв и цифр.
+Скрипт `generator.py` отправляет в stdout случайные строки состоящие из латинских букв и цифр.
 
 Аргументами можно задать параметры генерируемых строк.
 
 Пример:
 
 ```shell script
-./genarator.py --maxsize 80 --count 100000
+./generator.py --maxsize 80 --count 100000
 ```
 
 # Сортировка строк
@@ -27,5 +27,5 @@ cat test_file.txt | ./sorter.py --max_chunk_size 3214
 # Объединяем генерацию и сортировку
 
 ```shell script
-./genarator.py --maxsize 80 --count 100000 | ./sorter.py --max_chunk_size 3214 | less
+./generator.py --maxsize 80 --count 100000 | ./sorter.py --max_chunk_size 3214 | less
 ```
